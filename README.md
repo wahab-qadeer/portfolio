@@ -210,6 +210,16 @@
             from, to { opacity: 1; }
             50% { opacity: 0; }
         }
+        .markdown-body h4 {
+    font-size: 1em;
+    margin-left: -5px;
+    margin-top: initial;
+    }
+    .text-slate-400 {
+    display: flex;
+    align-items: center;    /* Centers text vertically (up/down) */
+    justify-content: center; /* Centers text horizontally (left/right) 
+  }
     </style>
 </head>
 <body class="selection:bg-neon-cyan selection:text-obsidian-900">
