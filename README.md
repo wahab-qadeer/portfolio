@@ -95,7 +95,6 @@
             opacity: 0.7;
         }
 
-        /* Ambient Glowing Orbs */
         .glow-orb {
             position: absolute;
             border-radius: 50%;
@@ -162,7 +161,6 @@
             filter: contrast(1.1) brightness(1.02);
         }
 
-        /* Background Glows for Image */
         .image-glow {
             position: absolute;
             top: 50%;
@@ -200,7 +198,6 @@
             background-clip: text;
         }
 
-        /* The Typing Caret */
         .type-caret::after {
             content: '';
             display: inline-block;
@@ -244,13 +241,11 @@
             transform: translateY(0);
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #020806; }
         ::-webkit-scrollbar-thumb { background: #08332a; border-radius: 5px; border: 2px solid #020806; }
         ::-webkit-scrollbar-thumb:hover { background: #10b981; }
 
-        /* Modal Overlay */
         .modal-overlay {
             position: fixed; inset: 0;
             background: rgba(2, 8, 6, 0.95);
@@ -278,7 +273,6 @@
 </head>
 <body class="selection:bg-neon-emerald selection:text-system-950">
 
-    <!-- Ambient Canvas & Glows -->
     <canvas id="ambient-canvas"></canvas>
     <div class="glow-orb orb-1"></div>
     <div class="glow-orb orb-2"></div>
@@ -290,7 +284,6 @@
         <div class="max-w-[1400px] mx-auto">
             <div class="glass-card rounded-2xl px-6 md:px-10 py-4 flex items-center justify-between">
                 
-                <!-- Logo -->
                 <a href="#" class="font-heading font-bold text-2xl text-white flex items-center gap-4 group">
                     <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-neon-emerald to-neon-teal flex items-center justify-center text-system-950 font-black text-xl shadow-[0_0_20px_rgba(16,185,129,0.4)] group-hover:rotate-12 transition-transform duration-300">
                         WQ
@@ -301,7 +294,6 @@
                     </div>
                 </a>
 
-                <!-- Desktop Nav -->
                 <nav class="hidden lg:flex items-center space-x-8 xl:space-x-10 text-sm font-medium text-slate-300">
                     <a href="#about" class="hover:text-neon-emerald transition-colors duration-300">Profile</a>
                     <a href="#analytics" class="hover:text-neon-emerald transition-colors duration-300">Analytics</a>
@@ -325,7 +317,6 @@
                 
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-24">
                     
-                    <!-- LEFT COLUMN: Profile Image -->
                     <div class="w-full lg:w-5/12 flex justify-center lg:justify-start order-2 lg:order-1 reveal-up">
                         <div class="relative w-full max-w-md animate-float-smooth">
                             <div class="image-showcase">
@@ -336,7 +327,6 @@
                                     onerror="this.src='https://placehold.co/600x800/05211c/10b981?text=Wahab+Qadeer'"
                                 >
                             </div>
-                            <!-- Floating Badge -->
                             <div class="absolute -bottom-6 -right-4 md:-right-8 glass-card px-6 py-3.5 rounded-xl border border-neon-emerald/40 text-sm font-code font-bold text-white shadow-2xl z-20 flex items-center gap-3">
                                 <span class="relative flex h-3 w-3">
                                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-emerald opacity-75"></span>
@@ -347,7 +337,6 @@
                         </div>
                     </div>
 
-                    <!-- RIGHT COLUMN: Typography & Action -->
                     <div class="w-full lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left order-1 lg:order-2 reveal-up" style="transition-delay: 150ms;">
                         
                         <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-system-800 border border-neon-teal/30 text-neon-teal text-xs font-code uppercase tracking-widest mb-8 shadow-lg">
@@ -359,7 +348,6 @@
                             <span class="text-gradient">Intelligent</span> Systems.
                         </h1>
 
-                        <!-- Fixed Typing Text Row -->
                         <div class="flex flex-row items-center justify-center lg:justify-start text-xl sm:text-2xl lg:text-3xl font-medium text-slate-300 mb-8 h-10 w-full overflow-hidden">
                             <span class="mr-3 whitespace-nowrap">I build</span>
                             <span id="typing-text" class="font-code text-neon-emerald font-bold type-caret whitespace-nowrap border-b-2 border-neon-emerald/30 pb-1"></span>
@@ -369,9 +357,7 @@
                             Computer Science undergraduate specializing in Artificial Intelligence. I bridge the gap between raw data, complex algorithmic logic, and robust object-oriented software architectures to solve real-world problems.
                         </p>
 
-                        <!-- Fixed Buttons and KPIs layout -->
                         <div class="flex flex-col sm:flex-row items-center gap-8 w-full justify-center lg:justify-start">
-                            
                             <a href="#analytics" class="px-8 py-4 rounded-xl bg-neon-emerald text-system-950 font-black text-base hover:bg-neon-lime hover:shadow-[0_0_30px_rgba(163,230,53,0.5)] transition-all flex items-center gap-3 shrink-0">
                                 Explore Analytics <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -412,7 +398,6 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-up" style="transition-delay: 200ms;">
                     
-                    <!-- Chart 1: Skill Distribution -->
                     <div class="glass-solid p-8 rounded-[2rem] flex flex-col relative overflow-hidden">
                         <div class="mb-8 relative z-10">
                             <h3 class="text-2xl font-bold text-white flex items-center gap-3">
@@ -426,7 +411,6 @@
                         <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-neon-emerald/10 blur-3xl rounded-full"></div>
                     </div>
 
-                    <!-- Chart 2: Core Competencies -->
                     <div class="glass-solid p-8 rounded-[2rem] flex flex-col relative overflow-hidden">
                         <div class="mb-8 relative z-10">
                             <h3 class="text-2xl font-bold text-white flex items-center gap-3">
@@ -440,7 +424,6 @@
                         <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-neon-teal/10 blur-3xl rounded-full"></div>
                     </div>
 
-                    <!-- Chart 3: Tech Languages -->
                     <div class="glass-solid p-8 rounded-[2rem] flex flex-col relative overflow-hidden md:col-span-2 lg:col-span-1">
                         <div class="mb-8 relative z-10">
                             <h3 class="text-2xl font-bold text-white flex items-center gap-3">
@@ -454,7 +437,6 @@
                         <div class="absolute top-1/2 right-1/2 w-40 h-40 bg-neon-lime/5 blur-3xl rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
                     </div>
 
-                    <!-- Chart 4: Learning Velocity (Full Width) -->
                     <div class="glass-solid p-8 md:p-12 rounded-[2rem] flex flex-col lg:col-span-3 relative overflow-hidden">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-6 relative z-10">
                             <div>
@@ -463,7 +445,6 @@
                                 </h3>
                                 <p class="text-xs text-slate-500 font-code uppercase tracking-wider mt-2">12-Month Progression Trend</p>
                             </div>
-                            
                             <div class="flex items-center gap-6 bg-system-950 p-4 rounded-xl border border-white/5">
                                 <div class="flex items-center gap-2">
                                     <div class="w-4 h-4 rounded bg-neon-cyan/50 border border-neon-cyan"></div>
@@ -475,7 +456,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="chart-container-wide relative z-10">
                             <canvas id="chartMixed"></canvas>
                         </div>
@@ -503,7 +483,6 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                     
-                    <!-- Project 1 -->
                     <div class="glass-card p-10 lg:p-12 rounded-[2.5rem] group cursor-pointer reveal-up flex flex-col justify-between" onclick="openModal('modal-1')">
                         <div>
                             <div class="w-20 h-20 rounded-2xl bg-system-800 border border-neon-emerald/30 flex items-center justify-center text-neon-emerald text-4xl mb-8 group-hover:scale-110 group-hover:bg-neon-emerald/10 transition-all duration-300 shadow-[0_0_20px_rgba(16,185,129,0.1)] group-hover:shadow-[0_0_30px_rgba(16,185,129,0.3)]">
@@ -525,7 +504,6 @@
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
                     <div class="glass-card p-10 lg:p-12 rounded-[2.5rem] group cursor-pointer reveal-up flex flex-col justify-between" style="transition-delay: 150ms;" onclick="openModal('modal-2')">
                         <div>
                             <div class="w-20 h-20 rounded-2xl bg-system-800 border border-neon-teal/30 flex items-center justify-center text-neon-teal text-4xl mb-8 group-hover:scale-110 group-hover:bg-neon-teal/10 transition-all duration-300 shadow-[0_0_20px_rgba(20,184,166,0.1)] group-hover:shadow-[0_0_30px_rgba(20,184,166,0.3)]">
@@ -547,7 +525,6 @@
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
                     <div class="glass-card p-10 lg:p-12 rounded-[2.5rem] group cursor-pointer reveal-up flex flex-col justify-between" onclick="openModal('modal-3')">
                         <div>
                             <div class="w-20 h-20 rounded-2xl bg-system-800 border border-neon-lime/30 flex items-center justify-center text-neon-lime text-4xl mb-8 group-hover:scale-110 group-hover:bg-neon-lime/10 transition-all duration-300 shadow-[0_0_20px_rgba(163,230,53,0.1)] group-hover:shadow-[0_0_30px_rgba(163,230,53,0.3)]">
@@ -569,7 +546,6 @@
                         </div>
                     </div>
 
-                    <!-- Project 4 (Hardware) -->
                     <div class="glass-card p-10 lg:p-12 rounded-[2.5rem] group cursor-pointer reveal-up flex flex-col justify-between" style="transition-delay: 150ms;" onclick="openModal('modal-4')">
                         <div>
                             <div class="w-20 h-20 rounded-2xl bg-system-800 border border-[#ef4444]/30 flex items-center justify-center text-[#ef4444] text-4xl mb-8 group-hover:scale-110 group-hover:bg-[#ef4444]/10 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.1)] group-hover:shadow-[0_0_30px_rgba(239,68,68,0.3)]">
@@ -596,7 +572,7 @@
         </section>
 
         <!-- =========================================
-             NEW: FUTURE TRAJECTORY / NEXT FOCUS
+             FUTURE TRAJECTORY / NEXT FOCUS
              ========================================= -->
         <section id="focus" class="py-28 px-4 sm:px-6 lg:px-8 border-t border-system-800 bg-system-900/40 relative z-10">
             <div class="max-w-[1400px] mx-auto">
@@ -605,14 +581,12 @@
                     <span class="text-sm font-code text-neon-cyan uppercase tracking-widest block mb-4 font-bold">Evolutionary Path</span>
                     <h2 class="text-4xl sm:text-5xl font-extrabold text-white">Future <span class="text-gradient-cyan">Trajectory</span></h2>
                     <p class="text-slate-400 mt-6 max-w-3xl mx-auto text-lg leading-relaxed">
-                        Continuously expanding my architectural expertise into advanced domains. Here are the core pillars I am focusing on for the next phase of my professional development.
+                        Continuously expanding my architectural expertise. Here is the core technical trifecta I am mastering for the next phase of my professional development.
                     </p>
                 </div>
 
-                <!-- 3-Column Grid for Next Focus Areas -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     
-                    <!-- AI & ML -->
                     <div class="glass-card p-10 rounded-[2rem] reveal-up group">
                         <div class="w-16 h-16 rounded-2xl bg-system-800 border border-neon-teal/30 flex items-center justify-center text-neon-teal text-3xl mb-8 group-hover:scale-110 group-hover:bg-neon-teal/10 transition-all duration-300">
                             <i class="fa-solid fa-brain"></i>
@@ -623,25 +597,23 @@
                         </p>
                     </div>
 
-                    <!-- Automation Software -->
                     <div class="glass-card p-10 rounded-[2rem] reveal-up group" style="transition-delay: 150ms;">
                         <div class="w-16 h-16 rounded-2xl bg-system-800 border border-neon-lime/30 flex items-center justify-center text-neon-lime text-3xl mb-8 group-hover:scale-110 group-hover:bg-neon-lime/10 transition-all duration-300">
-                            <i class="fa-solid fa-robot"></i>
+                            <i class="fa-solid fa-network-wired"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-neon-lime transition-colors">Automation Software</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-neon-lime transition-colors">Data Structures & Algorithms</h3>
                         <p class="text-slate-400 text-base leading-relaxed">
-                            Designing intelligent workflows and Robotic Process Automation (RPA) tools to eliminate redundant tasks, streamline data pipelines, and drastically optimize system efficiency.
+                            Mastering advanced data structures, graph theory, and algorithm optimization to write highly efficient, scalable, and computationally robust code for complex problem-solving.
                         </p>
                     </div>
 
-                    <!-- Software Engineering -->
                     <div class="glass-card p-10 rounded-[2rem] reveal-up group" style="transition-delay: 300ms;">
                         <div class="w-16 h-16 rounded-2xl bg-system-800 border border-neon-cyan/30 flex items-center justify-center text-neon-cyan text-3xl mb-8 group-hover:scale-110 group-hover:bg-neon-cyan/10 transition-all duration-300">
                             <i class="fa-solid fa-code-branch"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-neon-cyan transition-colors">Software Engineering</h3>
                         <p class="text-slate-400 text-base leading-relaxed">
-                            Mastering advanced design patterns, microservices architecture, and cloud-native integrations to build highly scalable, maintainable, and fault-tolerant enterprise applications.
+                            Mastering advanced design patterns, microservices architecture, and system integration strategies to build highly scalable, maintainable, and fault-tolerant enterprise applications.
                         </p>
                     </div>
 
@@ -650,18 +622,17 @@
         </section>
 
         <!-- =========================================
-             CONTACT / TERMINAL SECTION 
+             CONTACT / TERMINAL SECTION (Pristine layout)
              ========================================= -->
         <section id="connect" class="py-28 px-4 sm:px-6 lg:px-8 border-t border-system-800 bg-system-900/60 relative z-10">
-            <div class="max-w-[1200px] mx-auto">
+            <div class="max-w-[1300px] mx-auto">
                 
-                <div class="glass-solid rounded-[3rem] p-8 sm:p-12 lg:p-16 border border-neon-emerald/30 shadow-[0_30px_70px_rgba(0,0,0,0.8),0_0_50px_rgba(16,185,129,0.1)] reveal-up">
+                <div class="glass-solid rounded-[3rem] p-8 sm:p-12 lg:p-16 border border-neon-emerald/20 shadow-[0_30px_70px_rgba(0,0,0,0.6),0_0_50px_rgba(16,185,129,0.1)] reveal-up">
                     
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-start">
                         
-                        <!-- LEFT SIDE: Text and Social Links -->
-                        <div class="flex flex-col justify-center">
-                            
+                        <!-- LEFT SIDE: Text and Links -->
+                        <div class="flex flex-col w-full">
                             <div class="mb-12">
                                 <span class="text-sm font-code text-neon-emerald uppercase tracking-widest block mb-4 font-bold flex items-center gap-3">
                                     <span class="w-3 h-3 rounded-full bg-neon-emerald animate-ping inline-block"></span> Establishing Handshake
@@ -672,58 +643,61 @@
                                 </p>
                             </div>
 
-                            <!-- Social Links Box -->
-                            <div class="space-y-6">
-                                <a href="mailto:realwahabqadeer@gmail.com" class="flex items-center gap-6 p-6 rounded-2xl bg-system-950 border border-system-800 hover:border-neon-emerald/60 group transition-all duration-300 transform hover:translate-x-3 w-full">
+                            <div class="space-y-6 w-full">
+                                <a href="mailto:realwahabqadeer@gmail.com" class="flex items-center gap-6 p-6 rounded-2xl bg-system-950/50 border border-system-800 hover:border-neon-emerald/60 hover:bg-system-900 group transition-all duration-300 w-full">
                                     <div class="w-16 h-16 shrink-0 rounded-xl bg-system-900 flex items-center justify-center text-neon-emerald text-2xl group-hover:bg-neon-emerald group-hover:text-system-950 transition-colors shadow-inner">
                                         <i class="fa-solid fa-envelope"></i>
                                     </div>
                                     <div class="flex flex-col overflow-hidden">
-                                        <span class="text-xs font-code text-slate-500 uppercase tracking-widest block mb-2 truncate">Direct Protocol</span>
+                                        <span class="text-xs font-code text-slate-500 uppercase tracking-widest block mb-2">Direct Protocol</span>
                                         <span class="text-lg font-bold text-white group-hover:text-neon-emerald transition-colors truncate">realwahabqadeer@gmail.com</span>
                                     </div>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/wahab-qadeer/" target="_blank" class="flex items-center gap-6 p-6 rounded-2xl bg-system-950 border border-system-800 hover:border-blue-500/60 group transition-all duration-300 transform hover:translate-x-3 w-full">
+                                <a href="https://www.linkedin.com/in/wahab-qadeer/" target="_blank" class="flex items-center gap-6 p-6 rounded-2xl bg-system-950/50 border border-system-800 hover:border-blue-500/60 hover:bg-system-900 group transition-all duration-300 w-full">
                                     <div class="w-16 h-16 shrink-0 rounded-xl bg-system-900 flex items-center justify-center text-blue-500 text-2xl group-hover:bg-blue-500 group-hover:text-white transition-colors shadow-inner">
                                         <i class="fa-brands fa-linkedin-in"></i>
                                     </div>
                                     <div class="flex flex-col overflow-hidden">
-                                        <span class="text-xs font-code text-slate-500 uppercase tracking-widest block mb-2 truncate">Professional Network</span>
+                                        <span class="text-xs font-code text-slate-500 uppercase tracking-widest block mb-2">Professional Network</span>
                                         <span class="text-lg font-bold text-white group-hover:text-blue-500 transition-colors truncate">linkedin.com/in/wahab-qadeer</span>
                                     </div>
                                 </a>
                             </div>
                         </div>
 
-                        <!-- RIGHT SIDE: Terminal Form -->
-                        <div class="bg-[#010403] rounded-[2.5rem] p-8 sm:p-12 border border-system-700 shadow-inner w-full flex flex-col justify-center">
+                        <!-- RIGHT SIDE: Enclosed Terminal Form -->
+                        <div class="bg-[#000504] rounded-3xl border border-system-700 shadow-2xl w-full flex flex-col overflow-hidden">
                             
-                            <div class="flex items-center gap-3 mb-10 border-b border-system-800 pb-6">
-                                <div class="w-4 h-4 rounded-full bg-red-500"></div>
-                                <div class="w-4 h-4 rounded-full bg-yellow-500"></div>
-                                <div class="w-4 h-4 rounded-full bg-neon-emerald"></div>
-                                <span class="ml-4 text-sm font-code text-slate-500 whitespace-nowrap">bash: ./transmit.sh</span>
+                            <!-- Terminal Top Bar -->
+                            <div class="bg-system-900 px-6 py-4 flex items-center gap-3 border-b border-system-700">
+                                <div class="w-3.5 h-3.5 rounded-full bg-red-500"></div>
+                                <div class="w-3.5 h-3.5 rounded-full bg-yellow-500"></div>
+                                <div class="w-3.5 h-3.5 rounded-full bg-neon-emerald"></div>
+                                <span class="ml-4 text-xs font-code text-slate-400">bash: ~/transmit_payload.sh</span>
                             </div>
 
-                            <form id="contact-form" class="space-y-8">
-                                <div class="group">
-                                    <label class="block text-sm font-code font-bold text-neon-emerald mb-3 uppercase tracking-widest">>> String: Identity</label>
-                                    <input type="text" required id="form-name" class="w-full bg-transparent border-b-2 border-system-800 text-white text-lg px-0 py-3 focus:outline-none focus:border-neon-emerald transition-colors font-code placeholder-slate-700" placeholder="Enter your name">
-                                </div>
-                                <div class="group">
-                                    <label class="block text-sm font-code font-bold text-neon-emerald mb-3 uppercase tracking-widest">>> Protocol: Address</label>
-                                    <input type="email" required id="form-email" class="w-full bg-transparent border-b-2 border-system-800 text-white text-lg px-0 py-3 focus:outline-none focus:border-neon-emerald transition-colors font-code placeholder-slate-700" placeholder="Enter your email">
-                                </div>
-                                <div class="group">
-                                    <label class="block text-sm font-code font-bold text-neon-emerald mb-3 uppercase tracking-widest">>> Data: Payload</label>
-                                    <textarea rows="4" required id="form-message" class="w-full bg-transparent border-b-2 border-system-800 text-white text-lg px-0 py-3 focus:outline-none focus:border-neon-emerald transition-colors font-code placeholder-slate-700 resize-none leading-relaxed" placeholder="Write logic here..."></textarea>
-                                </div>
-                                
-                                <button type="submit" class="w-full py-5 rounded-xl bg-neon-emerald text-system-950 font-black text-base uppercase tracking-widest hover:bg-neon-lime hover:shadow-[0_0_30px_rgba(163,230,53,0.5)] transition-all flex items-center justify-center gap-4 mt-6">
-                                    Execute Transmission <i class="fa-solid fa-paper-plane text-xl"></i>
-                                </button>
-                            </form>
+                            <!-- Terminal Body -->
+                            <div class="p-8 sm:p-10">
+                                <form id="contact-form" class="space-y-6">
+                                    <div>
+                                        <label class="block text-xs font-code font-bold text-neon-emerald mb-2 uppercase tracking-widest">>> String: Identity</label>
+                                        <input type="text" required id="form-name" class="w-full bg-system-900/50 border border-system-700 rounded-xl text-white px-5 py-4 focus:outline-none focus:border-neon-emerald focus:ring-1 focus:ring-neon-emerald transition-all font-code text-sm placeholder-slate-600" placeholder="Enter your name">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-code font-bold text-neon-emerald mb-2 uppercase tracking-widest">>> Protocol: Address</label>
+                                        <input type="email" required id="form-email" class="w-full bg-system-900/50 border border-system-700 rounded-xl text-white px-5 py-4 focus:outline-none focus:border-neon-emerald focus:ring-1 focus:ring-neon-emerald transition-all font-code text-sm placeholder-slate-600" placeholder="Enter your email">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-code font-bold text-neon-emerald mb-2 uppercase tracking-widest">>> Data: Payload</label>
+                                        <textarea rows="4" required id="form-message" class="w-full bg-system-900/50 border border-system-700 rounded-xl text-white px-5 py-4 focus:outline-none focus:border-neon-emerald focus:ring-1 focus:ring-neon-emerald transition-all font-code text-sm placeholder-slate-600 resize-none leading-relaxed" placeholder="Write logic here..."></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="w-full py-5 rounded-xl bg-neon-emerald text-system-950 font-black text-base uppercase tracking-widest hover:bg-neon-lime hover:shadow-[0_0_30px_rgba(163,230,53,0.5)] transition-all flex items-center justify-center gap-4 mt-6">
+                                        Execute Transmission <i class="fa-solid fa-paper-plane text-xl"></i>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                         
                     </div>
@@ -747,7 +721,6 @@
          FULL SCREEN MODAL SYSTEM (For deep dives)
          ========================================= -->
     
-    <!-- Modal 1 -->
     <div id="modal-1" class="modal-overlay" onclick="closeModal(event, 'modal-1')">
         <div class="modal-box" onclick="event.stopPropagation()">
             <div class="flex justify-between items-start mb-10 border-b border-system-800 pb-8">
@@ -806,13 +779,11 @@
         </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- Modals 2, 3, 4 -->
     <div id="modal-2" class="modal-overlay" onclick="closeModal(event, 'modal-2')"><div class="modal-box" onclick="event.stopPropagation()"><div class="flex justify-between items-start mb-10 border-b border-system-800 pb-8"><div><span class="text-neon-teal font-code text-sm uppercase tracking-widest font-bold block mb-3">Database Engineering</span><h2 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight">Aero-Reserve DBMS</h2></div><button onclick="closeModal(null, 'modal-2')" class="w-14 h-14 rounded-full bg-system-800 text-slate-400 hover:text-white transition-all flex items-center justify-center shrink-0"><i class="fa-solid fa-xmark text-2xl"></i></button></div><div class="text-slate-300 text-lg leading-loose"><p>A highly normalized relational database project engineered to simulate the backend of an international airline booking system. Includes complex Entity-Relationship modeling translated into strict physical database schemas with foreign key constraints, high-performance JOIN queries, and data normalization ensuring zero insertion anomalies.</p></div></div></div>
     
-    <!-- Modal 3 -->
     <div id="modal-3" class="modal-overlay" onclick="closeModal(event, 'modal-3')"><div class="modal-box" onclick="event.stopPropagation()"><div class="flex justify-between items-start mb-10 border-b border-system-800 pb-8"><div><span class="text-neon-lime font-code text-sm uppercase tracking-widest font-bold block mb-3">Algorithmic Logic</span><h2 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight">Smart Irrigation Engine</h2></div><button onclick="closeModal(null, 'modal-3')" class="w-14 h-14 rounded-full bg-system-800 text-slate-400 hover:text-white transition-all flex items-center justify-center shrink-0"><i class="fa-solid fa-xmark text-2xl"></i></button></div><div class="text-slate-300 text-lg leading-loose"><p>A console-based logic simulation built purely in C++ without external libraries. It models intelligent water distribution based on variable environmental factors, utilizing complex conditional structures and looping logic to simulate resource conservation dynamically.</p></div></div></div>
     
-    <!-- Modal 4 -->
     <div id="modal-4" class="modal-overlay" onclick="closeModal(event, 'modal-4')"><div class="modal-box" onclick="event.stopPropagation()"><div class="flex justify-between items-start mb-10 border-b border-system-800 pb-8"><div><span class="text-[#ef4444] font-code text-sm uppercase tracking-widest font-bold block mb-3">Embedded Systems</span><h2 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight">Auto Fire Brigade</h2></div><button onclick="closeModal(null, 'modal-4')" class="w-14 h-14 rounded-full bg-system-800 text-slate-400 hover:text-white transition-all flex items-center justify-center shrink-0"><i class="fa-solid fa-xmark text-2xl"></i></button></div><div class="text-slate-300 text-lg leading-loose"><p>Hardware and software synergy. Designed and programmed an autonomous robot utilizing physical flame sensors and Arduino microcontrollers. The logic connects sensor inputs to motor driver outputs to detect and maneuver toward fires dynamically in real-time.</p></div></div></div>
 
     <!-- TOAST NOTIFICATION -->
@@ -828,11 +799,9 @@
          MASTER JAVASCRIPT ENGINE
          ========================================= -->
     <script>
-        // 1. Basic Utils
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // 2. Typing Effect
-        const phrases = ["Machine Learning Models.", "Object-Oriented Logic.", "Relational Databases.", "Embedded IoT Systems."];
+        const phrases = ["AI & Machine Learning.", "Data Structures & Algorithms.", "Software Engineering."];
         let pIdx = 0, cIdx = 0, isDel = false;
         const typeEl = document.getElementById('typing-text');
         
@@ -852,7 +821,6 @@
         }
         setTimeout(typeWriter, 1200);
 
-        // 3. Scroll Reveal & Smooth Counter Animations
         const revealElements = document.querySelectorAll('.reveal-up');
         const counters = document.querySelectorAll('.counter');
         let hasCounted = false;
@@ -885,7 +853,6 @@
         }, { threshold: 0.15 });
         revealElements.forEach(el => observer.observe(el));
 
-        // 4. Modal Engine
         function openModal(id) {
             document.body.style.overflow = 'hidden';
             document.getElementById(id).classList.add('active');
@@ -896,7 +863,6 @@
             document.getElementById(id).classList.remove('active');
         }
 
-        // 5. Contact Form Toast Logic
         document.getElementById('contact-form').addEventListener('submit', (e) => {
             e.preventDefault();
             const toast = document.getElementById('toast');
@@ -909,9 +875,7 @@
             }, 5000); 
         });
 
-        // 6. CHART.JS - Advanced Analytics Engine
         document.addEventListener("DOMContentLoaded", function() {
-            
             Chart.defaults.color = '#64748b'; 
             Chart.defaults.font.family = "'Fira Code', monospace";
             Chart.defaults.font.size = 12;
@@ -928,7 +892,6 @@
                 bodyFont: { size: 13, family: "'Fira Code', monospace" }
             };
 
-            // Doughnut (Skill Depth)
             new Chart(document.getElementById('chartDoughnut').getContext('2d'), {
                 type: 'doughnut',
                 data: {
@@ -951,7 +914,6 @@
                 }
             });
 
-            // Radar (Core Competencies)
             new Chart(document.getElementById('chartRadar').getContext('2d'), {
                 type: 'radar',
                 data: {
@@ -981,7 +943,6 @@
                 }
             });
 
-            // Polar Area (Tech Stack Mastery)
             new Chart(document.getElementById('chartPolar').getContext('2d'), {
                 type: 'polarArea',
                 data: {
@@ -1006,7 +967,6 @@
                 }
             });
 
-            // Mixed Line & Bar (Learning Velocity)
             const ctxMixed = document.getElementById('chartMixed').getContext('2d');
             const gradBar = ctxMixed.createLinearGradient(0, 0, 0, 400);
             gradBar.addColorStop(0, 'rgba(6, 182, 212, 0.9)');
@@ -1048,7 +1008,6 @@
             });
         });
 
-        // 7. Ambient Canvas Engine (Optimized Neural Network)
         const canvas = document.getElementById('ambient-canvas');
         const ctx = canvas.getContext('2d');
         let width, height;
