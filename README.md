@@ -284,7 +284,7 @@
                             
                             <div class="image-showcase">
                                 <img 
-                                    src="WhatsApp Image 2026-08-13 at 1.09.24 PM.jpeg" 
+                                    src="WhatsApp Image 2026-08-13 at 1.09.24 PM_2.jpeg" 
                                     alt="Wahab Qadeer" 
                                     onerror="this.src='https://placehold.co/600x800/06241e/10b981?text=Wahab+Qadeer'"
                                 >
